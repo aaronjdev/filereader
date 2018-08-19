@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>file reader</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        .boxcontainer {
+            width: 1000px;
+            padding:20px;
+        }
+        .tile {
+            width: 215px;
+            height: 160px;
+            padding: 5px;
+            margin: 10px;
+            background-color: aliceblue;
+            float: left;
+            text-align: center;
+        }
+         </style>
+
+    </head>
+    <body>
+        <h1>file reader</h1>
+		
+
+        <input type="file" id="files" name="files[]" />
+
+        <div id="file-info">
+                <p>Total size: <span id='totalsize'>0</span> bytes</p> 
+        </div>
+        <input type="button" id="toggleView" value="list view" />
+
+        <br>
+
+        <div id=file-view></div>
+
+        <script src="filereader.js"></script>
+    </body>
+</html>
